@@ -11,3 +11,13 @@ apt-cache policy docker-ce
 sudo apt-get install -y docker-ce
 
 sudo systemctl status docker
+
+wget "https://releases.hashicorp.com/consul/1.0.7/consul_1.0.7_linux_amd64.zip"
+
+apt install unzip
+
+unzip consul_1.0.7_linux_amd64.zip
+
+rm -f consul_1.0.7_linux_amd64.zip 
+mv consul /bin/
+
